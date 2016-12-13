@@ -1,0 +1,35 @@
+{
+  "behaviors": {
+    "PlayerControllerBehavior": {
+      "scriptId": "6",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "BtMenuBehavior": {
+      "scriptId": "14",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "SimpleEnnemiBehavior": {
+      "scriptId": "15",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "life",
+          "type": "number"
+        },
+        {
+          "name": "speed",
+          "type": "number"
+        },
+        {
+          "name": "frequence",
+          "type": "number"
+        }
+      ]
+    }
+  }
+}
