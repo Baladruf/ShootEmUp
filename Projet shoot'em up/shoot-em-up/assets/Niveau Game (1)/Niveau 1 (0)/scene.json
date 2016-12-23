@@ -121,76 +121,102 @@
       "prefab": null
     },
     {
-      "id": "3",
-      "name": "SimpleEnnemi1",
-      "children": [],
-      "components": [
+      "id": "4",
+      "name": "ListeEnnemis",
+      "children": [
         {
-          "type": "SpriteRenderer",
-          "config": {
-            "formatVersion": 1,
-            "spriteAssetId": "8",
-            "animationId": null,
-            "horizontalFlip": false,
-            "verticalFlip": false,
-            "castShadow": false,
-            "receiveShadow": false,
-            "color": "ff2f2f",
-            "overrideOpacity": false,
-            "opacity": null,
-            "materialType": "basic",
-            "shaderAssetId": null
-          },
-          "id": "0"
-        },
-        {
-          "type": "Behavior",
-          "config": {
-            "behaviorName": "SimpleEnnemiBehavior",
-            "propertyValues": {
-              "speed": {
-                "type": "number",
-                "value": 0.05
+          "id": "3",
+          "name": "SimpleEnnemi1",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "8",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ff2f2f",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
               },
-              "life": {
-                "type": "number",
-                "value": 10
+              "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "SimpleEnnemiBehavior",
+                "propertyValues": {
+                  "speed": {
+                    "type": "number",
+                    "value": 0.05
+                  },
+                  "life": {
+                    "type": "number",
+                    "value": 10
+                  },
+                  "frequence": {
+                    "type": "number",
+                    "value": 0
+                  }
+                }
               },
-              "frequence": {
-                "type": "number",
-                "value": 0
-              }
+              "id": "1"
+            },
+            {
+              "type": "ArcadeBody2D",
+              "config": {
+                "formatVersion": 2,
+                "type": "box",
+                "movable": true,
+                "width": 0.3,
+                "height": 0.3,
+                "offset": {
+                  "x": 0,
+                  "y": 0
+                },
+                "bounce": {
+                  "x": 0,
+                  "y": 0
+                },
+                "tileMapAssetId": null,
+                "tileSetPropertyName": null,
+                "layersIndex": null
+              },
+              "id": "2"
             }
+          ],
+          "position": {
+            "x": 0,
+            "y": 3.5,
+            "z": -1
           },
-          "id": "1"
-        },
-        {
-          "type": "ArcadeBody2D",
-          "config": {
-            "formatVersion": 2,
-            "type": "box",
-            "movable": true,
-            "width": 0.3,
-            "height": 0.3,
-            "offset": {
-              "x": 0,
-              "y": 0
-            },
-            "bounce": {
-              "x": 0,
-              "y": 0
-            },
-            "tileMapAssetId": null,
-            "tileSetPropertyName": null,
-            "layersIndex": null
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
           },
-          "id": "2"
+          "scale": {
+            "x": 0.10000000149011612,
+            "y": 0.10000000149011612,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
         }
       ],
+      "components": [],
       "position": {
         "x": 0,
-        "y": 3,
-        "z": 0
+        "y": -0.5,
+        "z": 1
       },
       "orientation": {
         "x": 0,
@@ -199,8 +225,42 @@
         "w": 1
       },
       "scale": {
-        "x": 0.1,
-        "y": 0.1,
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "5",
+      "name": "test",
+      "children": [],
+      "components": [
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "InitialisationBehavior",
+            "propertyValues": {}
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 0,
+        "y": -0.5,
+        "z": 1
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
         "z": 1
       },
       "visible": true,
