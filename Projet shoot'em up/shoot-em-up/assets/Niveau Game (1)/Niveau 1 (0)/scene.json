@@ -24,6 +24,14 @@
             "farClippingPlane": 1000
           },
           "id": "0"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "InitPartieBehavior",
+            "propertyValues": {}
+          },
+          "id": "2"
         }
       ],
       "position": {
@@ -126,7 +134,7 @@
       "children": [
         {
           "id": "3",
-          "name": "SimpleEnnemi1",
+          "name": "SimpleEnnemi",
           "children": [],
           "components": [
             {
@@ -154,7 +162,7 @@
                 "propertyValues": {
                   "speed": {
                     "type": "number",
-                    "value": 0.05
+                    "value": 0.01
                   },
                   "life": {
                     "type": "number",
@@ -162,7 +170,7 @@
                   },
                   "frequence": {
                     "type": "number",
-                    "value": 0
+                    "value": 2000
                   }
                 }
               },
@@ -210,12 +218,186 @@
           "visible": true,
           "layer": 0,
           "prefab": null
+        },
+        {
+          "id": "6",
+          "name": "SimpleEnnemi",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "8",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ff2f2f",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "SimpleEnnemiBehavior",
+                "propertyValues": {
+                  "speed": {
+                    "type": "number",
+                    "value": 0.02
+                  },
+                  "life": {
+                    "type": "number",
+                    "value": 10
+                  },
+                  "frequence": {
+                    "type": "number",
+                    "value": 2000
+                  }
+                }
+              },
+              "id": "1"
+            },
+            {
+              "type": "ArcadeBody2D",
+              "config": {
+                "formatVersion": 2,
+                "type": "box",
+                "movable": true,
+                "width": 0.3,
+                "height": 0.3,
+                "offset": {
+                  "x": 0,
+                  "y": 0
+                },
+                "bounce": {
+                  "x": 0,
+                  "y": 0
+                },
+                "tileMapAssetId": null,
+                "tileSetPropertyName": null,
+                "layersIndex": null
+              },
+              "id": "2"
+            }
+          ],
+          "position": {
+            "x": 2.674750566482544,
+            "y": 5.8109846115112305,
+            "z": -1
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.10000000149011612,
+            "y": 0.10000000149011612,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "7",
+          "name": "SimpleEnnemi",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "8",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ff2f2f",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "SimpleEnnemiBehavior",
+                "propertyValues": {
+                  "speed": {
+                    "type": "number",
+                    "value": 0.01
+                  },
+                  "life": {
+                    "type": "number",
+                    "value": 10
+                  },
+                  "frequence": {
+                    "type": "number",
+                    "value": 2000
+                  }
+                }
+              },
+              "id": "1"
+            },
+            {
+              "type": "ArcadeBody2D",
+              "config": {
+                "formatVersion": 2,
+                "type": "box",
+                "movable": true,
+                "width": 0.3,
+                "height": 0.3,
+                "offset": {
+                  "x": 0,
+                  "y": 0
+                },
+                "bounce": {
+                  "x": 0,
+                  "y": 0
+                },
+                "tileMapAssetId": null,
+                "tileSetPropertyName": null,
+                "layersIndex": null
+              },
+              "id": "2"
+            }
+          ],
+          "position": {
+            "x": -3.7018544673919678,
+            "y": 4.462910175323486,
+            "z": -1
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.10000000149011612,
+            "y": 0.10000000149011612,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
         }
       ],
       "components": [],
       "position": {
         "x": 0,
-        "y": -0.5,
+        "y": 0,
         "z": 1
       },
       "orientation": {
@@ -249,7 +431,7 @@
       ],
       "position": {
         "x": 0,
-        "y": -0.5,
+        "y": 0,
         "z": 1
       },
       "orientation": {

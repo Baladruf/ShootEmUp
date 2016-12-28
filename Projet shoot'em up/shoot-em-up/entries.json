@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 22,
+  "nextEntryId": 35,
   "nodes": [
     {
       "id": "1",
@@ -64,6 +64,26 @@
           "id": "21",
           "name": "Initialisation",
           "type": "script"
+        },
+        {
+          "id": "24",
+          "name": "Collectible",
+          "type": "script"
+        },
+        {
+          "id": "25",
+          "name": "InitPartie",
+          "type": "script"
+        },
+        {
+          "id": "26",
+          "name": "TirEnnemiCibler",
+          "type": "script"
+        },
+        {
+          "id": "34",
+          "name": "TirEnnemiPaternAngle",
+          "type": "script"
         }
       ]
     },
@@ -80,6 +100,36 @@
         {
           "id": "16",
           "name": "tir simple",
+          "type": "sprite"
+        },
+        {
+          "id": "23",
+          "name": "piece",
+          "type": "sprite"
+        },
+        {
+          "id": "27",
+          "name": "tirCibler",
+          "type": "sprite"
+        },
+        {
+          "id": "28",
+          "name": "tirNCibler",
+          "type": "sprite"
+        },
+        {
+          "id": "29",
+          "name": "pieceRare",
+          "type": "sprite"
+        },
+        {
+          "id": "30",
+          "name": "upgrade",
+          "type": "sprite"
+        },
+        {
+          "id": "31",
+          "name": "vie",
           "type": "sprite"
         }
       ]
@@ -104,6 +154,21 @@
         {
           "id": "17",
           "name": "TirSimple",
+          "type": "scene"
+        },
+        {
+          "id": "22",
+          "name": "CollectiblePoint",
+          "type": "scene"
+        },
+        {
+          "id": "32",
+          "name": "tirCibler",
+          "type": "scene"
+        },
+        {
+          "id": "33",
+          "name": "tirPaternAngle",
           "type": "scene"
         }
       ]

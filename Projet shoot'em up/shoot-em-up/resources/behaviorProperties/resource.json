@@ -28,6 +28,10 @@
         {
           "name": "frequence",
           "type": "number"
+        },
+        {
+          "name": "point",
+          "type": "number"
         }
       ]
     },
@@ -44,6 +48,49 @@
     },
     "InitialisationBehavior": {
       "scriptId": "21",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "CollectibleBehavior": {
+      "scriptId": "24",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "point",
+          "type": "number"
+        },
+        {
+          "name": "vitesse",
+          "type": "number"
+        }
+      ]
+    },
+    "InitPartieBehavior": {
+      "scriptId": "25",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "pv",
+          "type": "number"
+        }
+      ]
+    },
+    "TirEnnemiCiblerBehavior": {
+      "scriptId": "26",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "speed",
+          "type": "number"
+        }
+      ]
+    },
+    "TirEnnemiPaternAngleBehavior": {
+      "scriptId": "34",
       "line": 0,
       "parentBehavior": null,
       "properties": []

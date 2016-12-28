@@ -18,14 +18,9 @@ class TirBehavior extends Sup.Behavior {
       if(Sup.ArcadePhysics2D.intersects(this.actor.arcadeBody2D, TabVaisseauxBehavior.GetEnnemis()[i].arcadeBody2D)){
         let temp = TabVaisseauxBehavior.GetEnnemis()[i];
         TabVaisseauxBehavior.RemoveEnnemis(TabVaisseauxBehavior.GetEnnemis()[i]);
-        if(temp.getName() === "SimpleEnnemi"){
-          PlayerInfoBehavior.PointEnnemiSimple();
-          if(Sup.Math.Random.integer(0, 100) < 31){
-                let tempCollec = Sup.appendScene("Prefab/CollectiblePoint")[0];
-                tempCollec.arcadeBody2D.warpPosition(temp.getPosition().x, temp.getPosition().y);
-             }
-
-        }
+        /*if(temp.get){
+           
+           }*/
         temp.destroy();
         break;
       }

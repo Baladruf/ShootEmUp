@@ -8,20 +8,16 @@ class SimpleEnnemiBehavior extends Sup.Behavior {
   private pos1 : number;
   private pos2 : number;
   private sens : number;
-  private timer : number;
+  private timer;
   
   awake() {
     this.pos1 = this.actor.getPosition().x + 3;
     this.pos2 = this.actor.getPosition().x - 3;
     this.sens = 1;
-    this.timer = Sup.setInterval(this.frequence, this.tir.bind(this));
+    
   }
 
   update() {
-    if(this.actor.getPosition().y <= -5){
-      this.destroy();
-      this.actor.spriteRenderer.destroy();
-    }
     this.actor.arcadeBody2D.warpPosition(this.actor.getPosition().x, this.actor.getPosition().y - this.speed);
     if(this.actor.getPosition().x < this.pos1 && this.actor.getPosition().x > this.pos2){
       this.actor.arcadeBody2D.warpPosition(this.actor.getPosition().x + (this.sens * this.speed * 2), this.actor.getPosition().y);
@@ -33,12 +29,7 @@ class SimpleEnnemiBehavior extends Sup.Behavior {
   }
   
   tir(){
-    let tir = Sup.appendScene("Prefab/tirCibler")[0];
-    tir.arcadeBody2D.warpPosition(this.actor.getPosition().x, this.actor.getPosition().y);
-  }
-  
-  onDestroy(){
-    Sup.clearInterval(this.timer);
+    
   }
   
   
