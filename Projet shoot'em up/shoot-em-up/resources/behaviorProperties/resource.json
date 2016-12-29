@@ -58,7 +58,7 @@
       "parentBehavior": null,
       "properties": [
         {
-          "name": "point",
+          "name": "val",
           "type": "number"
         },
         {

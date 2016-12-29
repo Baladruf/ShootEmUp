@@ -3,14 +3,14 @@
   "nodes": [
     {
       "id": "0",
-      "name": "Piece",
+      "name": "Power",
       "children": [],
       "components": [
         {
           "type": "SpriteRenderer",
           "config": {
             "formatVersion": 1,
-            "spriteAssetId": "23",
+            "spriteAssetId": "30",
             "animationId": null,
             "horizontalFlip": false,
             "verticalFlip": false,
@@ -51,17 +51,13 @@
           "config": {
             "behaviorName": "CollectibleBehavior",
             "propertyValues": {
-              "point": {
+              "val": {
                 "type": "number",
-                "value": 500
+                "value": 1
               },
               "vitesse": {
                 "type": "number",
                 "value": 0.01
-              },
-              "val": {
-                "type": "number",
-                "value": 500
               }
             }
           },

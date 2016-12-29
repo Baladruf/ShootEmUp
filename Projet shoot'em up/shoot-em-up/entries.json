@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 35,
+  "nextEntryId": 39,
   "nodes": [
     {
       "id": "1",
@@ -169,6 +169,21 @@
         {
           "id": "33",
           "name": "tirPaternAngle",
+          "type": "scene"
+        },
+        {
+          "id": "35",
+          "name": "interface",
+          "type": "scene"
+        },
+        {
+          "id": "37",
+          "name": "CollectibleLife",
+          "type": "scene"
+        },
+        {
+          "id": "38",
+          "name": "CollectiblePower",
           "type": "scene"
         }
       ]

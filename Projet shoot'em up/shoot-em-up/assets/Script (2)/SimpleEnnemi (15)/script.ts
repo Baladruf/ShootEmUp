@@ -5,6 +5,7 @@ class SimpleEnnemiBehavior extends Sup.Behavior {
   public frequence : number;
   public point : number;
   
+  
   private pos1 : number;
   private pos2 : number;
   private sens : number;
