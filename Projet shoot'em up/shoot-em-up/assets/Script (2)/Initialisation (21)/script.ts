@@ -7,8 +7,8 @@ class InitialisationBehavior extends Sup.Behavior {
       TabVaisseauxBehavior.vaisseauxEnnemis.push(tabTempEnn[i]);
     }
     //TabVaisseauxBehavior.vaisseauxAllies.push(Sup.getActor("Player"));
-    PlayerInfoBehavior.vaisseau = Sup.getActor("Player");
-    //PlayerInfo2Behavior.solo = true;
+    PlayerInfoBehavior.vaisseau = Sup.getActor("Player1");
+    PlayerInfo2Behavior.solo = true;
   }
   
   start(){

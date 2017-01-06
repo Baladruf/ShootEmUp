@@ -60,23 +60,23 @@ class PlayerControllerBehavior extends Sup.Behavior {
         let tir2 = Sup.appendScene("Prefab/TirSimpleDiag")[0];
         tir2.arcadeBody2D.warpPosition(this.actor.getPosition().x, this.actor.getPosition().y);
         tir2.getBehavior(TirDiagonalBehavior).TypeDiago(1);
-        tir2.getBehavior(TirBehavior).tag("J1");
+        tir2.getBehavior(TirDiagonalBehavior).tag("J1");
         tir2.getBehavior(TirDiagonalBehavior).Active();
         let tir3 = Sup.appendScene("Prefab/TirSimpleDiag")[0];
         tir3.arcadeBody2D.warpPosition(this.actor.getPosition().x, this.actor.getPosition().y);
         tir3.getBehavior(TirDiagonalBehavior).TypeDiago(2);
-        tir3.getBehavior(TirBehavior).tag("J1");
+        tir3.getBehavior(TirDiagonalBehavior).tag("J1");
         tir3.getBehavior(TirDiagonalBehavior).Active();
         if(PlayerInfoBehavior.nvArme === 3){
           let tir4 = Sup.appendScene("Prefab/TirSimpleDiag")[0];
           tir4.arcadeBody2D.warpPosition(this.actor.getPosition().x, this.actor.getPosition().y);
           tir4.getBehavior(TirDiagonalBehavior).TypeDiago(3);
-          tir4.getBehavior(TirBehavior).tag("J1");
+          tir4.getBehavior(TirDiagonalBehavior).tag("J1");
           tir4.getBehavior(TirDiagonalBehavior).Active();
           let tir5 = Sup.appendScene("Prefab/TirSimpleDiag")[0];
           tir5.arcadeBody2D.warpPosition(this.actor.getPosition().x, this.actor.getPosition().y);
           tir5.getBehavior(TirDiagonalBehavior).TypeDiago(4);
-          tir5.getBehavior(TirBehavior).tag("J1");
+          tir5.getBehavior(TirDiagonalBehavior).tag("J1");
           tir5.getBehavior(TirDiagonalBehavior).Active();
         }
       }
