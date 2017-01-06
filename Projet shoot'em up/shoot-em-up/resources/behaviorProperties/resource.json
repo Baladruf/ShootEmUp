@@ -36,6 +36,10 @@
         {
           "name": "paternTir",
           "type": "number"
+        },
+        {
+          "name": "DeplacementCerclePArret",
+          "type": "number"
         }
       ]
     },

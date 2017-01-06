@@ -24,33 +24,33 @@ class PlayerControllerBehavior extends Sup.Behavior {
     }else if(Sup.Input.isKeyDown("DOWN") && this.actor.getPosition().y >= -4.7){
          this.actor.arcadeBody2D.warpPosition(this.actor.getPosition().x, this.actor.getPosition().y - PlayerInfoBehavior.speed);
        }
-    if(Sup.Input.wasKeyJustPressed("E") && PlayerInfoBehavior.updatePoint > 0 && PlayerInfoBehavior.nvArme < 3){
+    if(Sup.Input.wasKeyJustPressed("NUMPAD9") && PlayerInfoBehavior.updatePoint > 0 && PlayerInfoBehavior.nvArme < 3){
       PlayerInfoBehavior.nvArme++;
       PlayerInfoBehavior.updatePoint--;
       PlayerInfoBehavior.AfficheNbTir();
       PlayerInfoBehavior.AffichePower();
     }
-    if(Sup.Input.wasKeyJustPressed("A") && PlayerInfoBehavior.updatePoint > 0 && PlayerInfoBehavior.damage < 3){
+    if(Sup.Input.wasKeyJustPressed("NUMPAD7") && PlayerInfoBehavior.updatePoint > 0 && PlayerInfoBehavior.damage < 3){
       PlayerInfoBehavior.damage++;
       PlayerInfoBehavior.updatePoint--;
       PlayerInfoBehavior.AfficheDamage();
       PlayerInfoBehavior.AffichePower();
     }
-    if(Sup.Input.wasKeyJustPressed("Z") && PlayerInfoBehavior.updatePoint > 0 && PlayerInfoBehavior.nvSpeed < 3){
+    if(Sup.Input.wasKeyJustPressed("NUMPAD8") && PlayerInfoBehavior.updatePoint > 0 && PlayerInfoBehavior.nvSpeed < 3){
       PlayerInfoBehavior.nvSpeed++;
       PlayerInfoBehavior.speed *= 1.5;
       PlayerInfoBehavior.updatePoint--;
       PlayerInfoBehavior.AfficheSpeed();
       PlayerInfoBehavior.AffichePower();
     }
-    if(Sup.Input.wasKeyJustPressed("R") && PlayerInfoBehavior.updatePoint > 0 && PlayerInfoBehavior.nvCd < 3){
+    if(Sup.Input.wasKeyJustPressed("ADD") && PlayerInfoBehavior.updatePoint > 0 && PlayerInfoBehavior.nvCd < 3){
       PlayerInfoBehavior.nvCd++;
       PlayerInfoBehavior.cd -= 300;
       PlayerInfoBehavior.updatePoint--;
       PlayerInfoBehavior.AfficheCooldown();
       PlayerInfoBehavior.AffichePower();
     }
-    if(Sup.Input.isKeyDown("SPACE") && this.cd){
+    if(Sup.Input.isKeyDown("NUMPAD0") && this.cd){
       let tir : Sup.Actor;
       tir = Sup.appendScene("Prefab/TirSimple")[0];
       tir.arcadeBody2D.warpPosition(this.actor.getPosition().x, this.actor.getPosition().y);

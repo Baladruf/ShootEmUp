@@ -30,7 +30,7 @@ class PlayerControlleur2Behavior extends Sup.Behavior {
     }else if(Sup.Input.isKeyDown("S") && this.actor.getPosition().y >= -4.7){
          this.actor.arcadeBody2D.warpPosition(this.actor.getPosition().x, this.actor.getPosition().y - PlayerInfoBehavior.speed);
        }
-    if(Sup.Input.wasKeyJustPressed("P") && this.cd){
+    if(Sup.Input.wasKeyJustPressed("SPACE") && this.cd){
       let tir : Sup.Actor;
       tir = Sup.appendScene("Prefab/TirSimple")[0];
       tir.arcadeBody2D.warpPosition(this.actor.getPosition().x, this.actor.getPosition().y)
@@ -63,26 +63,26 @@ class PlayerControlleur2Behavior extends Sup.Behavior {
       this.cd = false;
       this.timer = Sup.setTimeout(PlayerInfoBehavior.cd, this.CdTir.bind(this));
      }
-    if(Sup.Input.wasKeyJustPressed("E") && PlayerInfo2Behavior.updatePoint > 0 && PlayerInfo2Behavior.nvArme < 3){
+    if(Sup.Input.wasKeyJustPressed("U") && PlayerInfo2Behavior.updatePoint > 0 && PlayerInfo2Behavior.nvArme < 3){
       PlayerInfo2Behavior.nvArme++;
       PlayerInfo2Behavior.updatePoint--;
       PlayerInfo2Behavior.AfficheNbTir();
       PlayerInfo2Behavior.AffichePower();
     }
-    if(Sup.Input.wasKeyJustPressed("A") && PlayerInfo2Behavior.updatePoint > 0 && PlayerInfo2Behavior.damage < 3){
+    if(Sup.Input.wasKeyJustPressed("I") && PlayerInfo2Behavior.updatePoint > 0 && PlayerInfo2Behavior.damage < 3){
       PlayerInfo2Behavior.damage++;
       PlayerInfo2Behavior.updatePoint--;
       PlayerInfo2Behavior.AfficheDamage();
       PlayerInfo2Behavior.AffichePower();
     }
-    if(Sup.Input.wasKeyJustPressed("Z") && PlayerInfo2Behavior.updatePoint > 0 && PlayerInfo2Behavior.nvSpeed < 3){
+    if(Sup.Input.wasKeyJustPressed("O") && PlayerInfo2Behavior.updatePoint > 0 && PlayerInfo2Behavior.nvSpeed < 3){
       PlayerInfo2Behavior.nvSpeed++;
       PlayerInfo2Behavior.speed *= 1.5;
       PlayerInfo2Behavior.updatePoint--;
       PlayerInfo2Behavior.AfficheSpeed();
       PlayerInfo2Behavior.AffichePower();
     }
-    if(Sup.Input.wasKeyJustPressed("R") && PlayerInfo2Behavior.updatePoint > 0 && PlayerInfo2Behavior.nvCd < 3){
+    if(Sup.Input.wasKeyJustPressed("P") && PlayerInfo2Behavior.updatePoint > 0 && PlayerInfo2Behavior.nvCd < 3){
       PlayerInfo2Behavior.nvCd++;
       PlayerInfo2Behavior.cd -= 300;
       PlayerInfo2Behavior.updatePoint--;

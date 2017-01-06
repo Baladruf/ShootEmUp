@@ -185,6 +185,35 @@
                 "layersIndex": null
               },
               "id": "1"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "SimpleEnnemiBehavior",
+                "propertyValues": {
+                  "life": {
+                    "type": "number",
+                    "value": 5
+                  },
+                  "speed": {
+                    "type": "number",
+                    "value": 0.01
+                  },
+                  "frequence": {
+                    "type": "number",
+                    "value": 1000
+                  },
+                  "typeDeplacement": {
+                    "type": "number",
+                    "value": 0
+                  },
+                  "paternTir": {
+                    "type": "number",
+                    "value": 0
+                  }
+                }
+              },
+              "id": "2"
             }
           ],
           "position": {
@@ -251,6 +280,35 @@
                 "layersIndex": null
               },
               "id": "1"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "SimpleEnnemiBehavior",
+                "propertyValues": {
+                  "life": {
+                    "type": "number",
+                    "value": 1
+                  },
+                  "speed": {
+                    "type": "number",
+                    "value": 0.01
+                  },
+                  "frequence": {
+                    "type": "number",
+                    "value": 1000
+                  },
+                  "typeDeplacement": {
+                    "type": "number",
+                    "value": 0
+                  },
+                  "paternTir": {
+                    "type": "number",
+                    "value": 0
+                  }
+                }
+              },
+              "id": "2"
             }
           ],
           "position": {
@@ -321,11 +379,31 @@
             {
               "type": "Behavior",
               "config": {
-                "behaviorName": "PaterneTestBehavior",
+                "behaviorName": "SimpleEnnemiBehavior",
                 "propertyValues": {
                   "speed": {
                     "type": "number",
-                    "value": 0.03
+                    "value": 0.01
+                  },
+                  "life": {
+                    "type": "number",
+                    "value": 3
+                  },
+                  "frequence": {
+                    "type": "number",
+                    "value": 800
+                  },
+                  "typeDeplacement": {
+                    "type": "number",
+                    "value": 4
+                  },
+                  "paternTir": {
+                    "type": "number",
+                    "value": 3
+                  },
+                  "DeplacementCerclePArret": {
+                    "type": "number",
+                    "value": 1
                   }
                 }
               },
