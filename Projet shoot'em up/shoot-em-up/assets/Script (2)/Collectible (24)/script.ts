@@ -15,7 +15,8 @@ class CollectibleBehavior extends Sup.Behavior {
         PlayerInfoBehavior.AfficheLife();
         this.dieCollec();
       }else if(this.actor.getName() === "Power"){
-        PlayerInfoBehavior.updatePoint = this.val;
+        PlayerInfoBehavior.updatePoint += this.val;
+        PlayerInfoBehavior.AffichePower();
         this.dieCollec();
       }
     }

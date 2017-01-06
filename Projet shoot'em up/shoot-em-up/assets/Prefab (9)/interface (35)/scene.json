@@ -132,10 +132,26 @@
           "id": "5",
           "name": "damage",
           "children": [],
-          "components": [],
+          "components": [
+            {
+              "type": "TextRenderer",
+              "config": {
+                "formatVersion": 2,
+                "fontAssetId": "11",
+                "text": "damage : 1",
+                "alignment": "left",
+                "verticalAlignment": "center",
+                "size": 20,
+                "color": null,
+                "overrideOpacity": false,
+                "opacity": null
+              },
+              "id": "0"
+            }
+          ],
           "position": {
-            "x": 0,
-            "y": 0,
+            "x": -8.3,
+            "y": -3.2,
             "z": 0
           },
           "orientation": {
@@ -145,8 +161,8 @@
             "w": 1
           },
           "scale": {
-            "x": 1,
-            "y": 1,
+            "x": 0.3,
+            "y": 0.3,
             "z": 1
           },
           "visible": true,
@@ -157,10 +173,26 @@
           "id": "6",
           "name": "speed",
           "children": [],
-          "components": [],
+          "components": [
+            {
+              "type": "TextRenderer",
+              "config": {
+                "formatVersion": 2,
+                "fontAssetId": "11",
+                "text": "speed : 1",
+                "alignment": "left",
+                "verticalAlignment": "center",
+                "size": 20,
+                "color": null,
+                "overrideOpacity": false,
+                "opacity": null
+              },
+              "id": "0"
+            }
+          ],
           "position": {
-            "x": 0,
-            "y": 0,
+            "x": -8.3,
+            "y": -3.7,
             "z": 0
           },
           "orientation": {
@@ -170,8 +202,90 @@
             "w": 1
           },
           "scale": {
-            "x": 1,
-            "y": 1,
+            "x": 0.3,
+            "y": 0.3,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "7",
+          "name": "nbTir",
+          "children": [],
+          "components": [
+            {
+              "type": "TextRenderer",
+              "config": {
+                "formatVersion": 2,
+                "fontAssetId": "11",
+                "text": "shoot : 1",
+                "alignment": "left",
+                "verticalAlignment": "center",
+                "size": 20,
+                "color": null,
+                "overrideOpacity": false,
+                "opacity": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -8.3,
+            "y": -4.2,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.3,
+            "y": 0.3,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "8",
+          "name": "cooldown",
+          "children": [],
+          "components": [
+            {
+              "type": "TextRenderer",
+              "config": {
+                "formatVersion": 2,
+                "fontAssetId": "11",
+                "text": "cooldown : 1",
+                "alignment": "left",
+                "verticalAlignment": "center",
+                "size": 20,
+                "color": null,
+                "overrideOpacity": false,
+                "opacity": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -8.3,
+            "y": -4.7,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.3,
+            "y": 0.3,
             "z": 1
           },
           "visible": true,

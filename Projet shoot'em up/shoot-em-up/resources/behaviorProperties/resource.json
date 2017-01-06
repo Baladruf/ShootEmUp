@@ -30,7 +30,11 @@
           "type": "number"
         },
         {
-          "name": "point",
+          "name": "typeDeplacement",
+          "type": "number"
+        },
+        {
+          "name": "paternTir",
           "type": "number"
         }
       ]
@@ -75,6 +79,10 @@
         {
           "name": "pv",
           "type": "number"
+        },
+        {
+          "name": "speed",
+          "type": "number"
         }
       ]
     },
@@ -84,6 +92,10 @@
       "parentBehavior": null,
       "properties": [
         {
+          "name": "active",
+          "type": "boolean"
+        },
+        {
           "name": "speed",
           "type": "number"
         }
@@ -91,6 +103,75 @@
     },
     "TirEnnemiPaternAngleBehavior": {
       "scriptId": "34",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "speed",
+          "type": "number"
+        }
+      ]
+    },
+    "PlayerControlleur2Behavior": {
+      "scriptId": "40",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "ModeSoloBehavior": {
+      "scriptId": "44",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "Mode2JBehavior": {
+      "scriptId": "45",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "PaterneTestBehavior": {
+      "scriptId": "49",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "speed",
+          "type": "number"
+        }
+      ]
+    },
+    "TirDiagonalBehavior": {
+      "scriptId": "50",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "vitesse",
+          "type": "number"
+        }
+      ]
+    },
+    "GameOverReturnBehavior": {
+      "scriptId": "53",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "ScoreJ1Behavior": {
+      "scriptId": "54",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "ScoreJ2Behavior": {
+      "scriptId": "55",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "FondDeplacementBehavior": {
+      "scriptId": "65",
       "line": 0,
       "parentBehavior": null,
       "properties": []

@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 39,
+  "nextEntryId": 67,
   "nodes": [
     {
       "id": "1",
@@ -7,8 +7,13 @@
       "type": null,
       "children": [
         {
-          "id": "0",
+          "id": "66",
           "name": "Niveau 1",
+          "type": "scene"
+        },
+        {
+          "id": "47",
+          "name": "Niveau 2",
           "type": "scene"
         }
       ]
@@ -19,8 +24,13 @@
       "type": null,
       "children": [
         {
-          "id": "12",
-          "name": "Menu Principal",
+          "id": "41",
+          "name": "Menu",
+          "type": "scene"
+        },
+        {
+          "id": "52",
+          "name": "Game Over",
           "type": "scene"
         }
       ]
@@ -36,8 +46,18 @@
           "type": "script"
         },
         {
+          "id": "40",
+          "name": "PlayerControlleur2",
+          "type": "script"
+        },
+        {
           "id": "7",
           "name": "PlayerInfo",
+          "type": "script"
+        },
+        {
+          "id": "39",
+          "name": "PlayerInfo2",
           "type": "script"
         },
         {
@@ -53,6 +73,11 @@
         {
           "id": "18",
           "name": "Tir",
+          "type": "script"
+        },
+        {
+          "id": "50",
+          "name": "TirDiagonal",
           "type": "script"
         },
         {
@@ -83,6 +108,55 @@
         {
           "id": "34",
           "name": "TirEnnemiPaternAngle",
+          "type": "script"
+        },
+        {
+          "id": "43",
+          "name": "Script Menu",
+          "type": null,
+          "children": [
+            {
+              "id": "44",
+              "name": "ModeSolo",
+              "type": "script"
+            },
+            {
+              "id": "45",
+              "name": "Mode2J",
+              "type": "script"
+            },
+            {
+              "id": "53",
+              "name": "GameOverReturn",
+              "type": "script"
+            },
+            {
+              "id": "54",
+              "name": "scoreJ1",
+              "type": "script"
+            },
+            {
+              "id": "55",
+              "name": "scoreJ2",
+              "type": "script"
+            }
+          ]
+        },
+        {
+          "id": "48",
+          "name": "test",
+          "type": null,
+          "children": [
+            {
+              "id": "49",
+              "name": "PaterneTest",
+              "type": "script"
+            }
+          ]
+        },
+        {
+          "id": "65",
+          "name": "fondDeplacement",
           "type": "script"
         }
       ]
@@ -130,6 +204,51 @@
         {
           "id": "31",
           "name": "vie",
+          "type": "sprite"
+        },
+        {
+          "id": "42",
+          "name": "fondMenu",
+          "type": "sprite"
+        },
+        {
+          "id": "57",
+          "name": "Player1",
+          "type": "sprite"
+        },
+        {
+          "id": "58",
+          "name": "Player2",
+          "type": "sprite"
+        },
+        {
+          "id": "59",
+          "name": "enn1",
+          "type": "sprite"
+        },
+        {
+          "id": "60",
+          "name": "enn2",
+          "type": "sprite"
+        },
+        {
+          "id": "61",
+          "name": "enn3",
+          "type": "sprite"
+        },
+        {
+          "id": "62",
+          "name": "decor",
+          "type": "sprite"
+        },
+        {
+          "id": "63",
+          "name": "decor2",
+          "type": "sprite"
+        },
+        {
+          "id": "64",
+          "name": "decor3",
           "type": "sprite"
         }
       ]
@@ -184,6 +303,16 @@
         {
           "id": "38",
           "name": "CollectiblePower",
+          "type": "scene"
+        },
+        {
+          "id": "46",
+          "name": "interface2J",
+          "type": "scene"
+        },
+        {
+          "id": "51",
+          "name": "TirSimpleDiag",
           "type": "scene"
         }
       ]

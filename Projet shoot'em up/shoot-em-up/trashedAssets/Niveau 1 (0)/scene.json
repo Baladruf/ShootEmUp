@@ -29,7 +29,16 @@
           "type": "Behavior",
           "config": {
             "behaviorName": "InitPartieBehavior",
-            "propertyValues": {}
+            "propertyValues": {
+              "pv": {
+                "type": "number",
+                "value": 3
+              },
+              "speed": {
+                "type": "number",
+                "value": 0.05
+              }
+            }
           },
           "id": "2"
         }
@@ -63,7 +72,7 @@
           "type": "SpriteRenderer",
           "config": {
             "formatVersion": 1,
-            "spriteAssetId": "8",
+            "spriteAssetId": "57",
             "animationId": null,
             "horizontalFlip": false,
             "verticalFlip": false,
@@ -120,8 +129,82 @@
         "w": 1
       },
       "scale": {
-        "x": 0.1,
-        "y": 0.1,
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "8",
+      "name": "Player2",
+      "children": [],
+      "components": [
+        {
+          "type": "SpriteRenderer",
+          "config": {
+            "formatVersion": 1,
+            "spriteAssetId": "58",
+            "animationId": null,
+            "horizontalFlip": false,
+            "verticalFlip": false,
+            "castShadow": false,
+            "receiveShadow": false,
+            "color": "ff80c0",
+            "overrideOpacity": false,
+            "opacity": null,
+            "materialType": "basic",
+            "shaderAssetId": null
+          },
+          "id": "0"
+        },
+        {
+          "type": "ArcadeBody2D",
+          "config": {
+            "formatVersion": 2,
+            "type": "box",
+            "movable": true,
+            "width": 0.3,
+            "height": 0.3,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "bounce": {
+              "x": 0,
+              "y": 0
+            },
+            "tileMapAssetId": null,
+            "tileSetPropertyName": null,
+            "layersIndex": null
+          },
+          "id": "1"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "PlayerControlleur2Behavior",
+            "propertyValues": {}
+          },
+          "id": "2"
+        }
+      ],
+      "position": {
+        "x": 2,
+        "y": -4,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
         "z": 1
       },
       "visible": true,
@@ -166,11 +249,19 @@
                   },
                   "life": {
                     "type": "number",
-                    "value": 10
+                    "value": 1
                   },
                   "frequence": {
                     "type": "number",
                     "value": 2000
+                  },
+                  "typeDeplacement": {
+                    "type": "number",
+                    "value": 2
+                  },
+                  "paternTir": {
+                    "type": "number",
+                    "value": 1
                   }
                 }
               },
@@ -249,15 +340,23 @@
                 "propertyValues": {
                   "speed": {
                     "type": "number",
-                    "value": 0.02
+                    "value": 0.005
                   },
                   "life": {
                     "type": "number",
-                    "value": 10
+                    "value": 1
                   },
                   "frequence": {
                     "type": "number",
-                    "value": 2000
+                    "value": 1000
+                  },
+                  "typeDeplacement": {
+                    "type": "number",
+                    "value": 3
+                  },
+                  "paternTir": {
+                    "type": "number",
+                    "value": 2
                   }
                 }
               },
@@ -288,7 +387,7 @@
           ],
           "position": {
             "x": 2.674750566482544,
-            "y": 5.8109846115112305,
+            "y": 6.003498554229736,
             "z": -1
           },
           "orientation": {
@@ -340,11 +439,19 @@
                   },
                   "life": {
                     "type": "number",
-                    "value": 10
+                    "value": 3
                   },
                   "frequence": {
                     "type": "number",
                     "value": 2000
+                  },
+                  "typeDeplacement": {
+                    "type": "number",
+                    "value": 1
+                  },
+                  "paternTir": {
+                    "type": "number",
+                    "value": 1
                   }
                 }
               },
@@ -374,8 +481,8 @@
             }
           ],
           "position": {
-            "x": -3.7018544673919678,
-            "y": 4.462910175323486,
+            "x": -3.702,
+            "y": 4.463,
             "z": -1
           },
           "orientation": {
@@ -443,6 +550,80 @@
       "scale": {
         "x": 1,
         "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "11",
+      "name": "fond1",
+      "children": [],
+      "components": [
+        {
+          "type": "SpriteRenderer",
+          "config": {
+            "formatVersion": 1,
+            "spriteAssetId": "62",
+            "animationId": null,
+            "horizontalFlip": false,
+            "verticalFlip": false,
+            "castShadow": false,
+            "receiveShadow": false,
+            "color": "ffffff",
+            "overrideOpacity": false,
+            "opacity": null,
+            "materialType": "basic",
+            "shaderAssetId": null
+          },
+          "id": "0"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "FondDeplacementBehavior",
+            "propertyValues": {}
+          },
+          "id": "1"
+        },
+        {
+          "type": "ArcadeBody2D",
+          "config": {
+            "formatVersion": 2,
+            "type": "box",
+            "movable": true,
+            "width": 1,
+            "height": 1,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "bounce": {
+              "x": 0,
+              "y": 0
+            },
+            "tileMapAssetId": null,
+            "tileSetPropertyName": null,
+            "layersIndex": null
+          },
+          "id": "2"
+        }
+      ],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": -10
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 3,
+        "y": 3,
         "z": 1
       },
       "visible": true,

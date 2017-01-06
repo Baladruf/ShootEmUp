@@ -50,7 +50,12 @@
           "type": "Behavior",
           "config": {
             "behaviorName": "TirEnnemiPaternAngleBehavior",
-            "propertyValues": {}
+            "propertyValues": {
+              "speed": {
+                "type": "number",
+                "value": 0.03
+              }
+            }
           },
           "id": "2"
         }
